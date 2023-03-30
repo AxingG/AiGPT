@@ -3,7 +3,7 @@ import os
 
 import openai
 
-openai.api_key = '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'
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 response = openai.Image.create(
     prompt="程序员",

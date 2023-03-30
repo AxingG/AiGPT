@@ -13,7 +13,7 @@ import openai
 # role user 表示是用户提问内容
 # content q 问题内容
 
-openai.api_key = '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'
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 
 class ChatGPT:
